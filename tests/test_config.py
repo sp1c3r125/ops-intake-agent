@@ -18,7 +18,8 @@ def test_api_needs_model_and_key():
 def test_claude_code_needs_nothing_and_model_is_optional():
     cfg = load({"BACKEND": "claude-code"})
     assert cfg.backend == "claude-code" and cfg.model is None and cfg.api_key is None
-    assert cfg.image_mode == config.DEFAULT_IMAGE_MODE["claude-code"]
+    assert cfg.image_mode == "vision"  # set from the image test: the CLI reads images (stream-json, method A)
+    assert load({"BACKEND": "claude-code", "IMAGE_MODE": "tesseract"}).image_mode == "tesseract"
     assert load({"BACKEND": "claude-code", "ANTHROPIC_MODEL": "m"}).model == "m"
 
 

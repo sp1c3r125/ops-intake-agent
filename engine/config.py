@@ -11,9 +11,12 @@ from datetime import date
 BACKENDS = ("api", "claude-code")
 IMAGE_MODES = ("vision", "tesseract")
 
-# Default IMAGE_MODE per backend. The api backend sends base64 image blocks, which the API supports.
-# The claude-code entry is PROVISIONAL: scripts/image_test.py decides it (see SPEC "Backends and images").
-DEFAULT_IMAGE_MODE = {"api": "vision", "claude-code": "tesseract"}
+# Default IMAGE_MODE per backend (SPEC "Backends and images").
+# api: base64 image blocks, supported by the API.
+# claude-code: scripts/image_test.py showed the CLI reads a base64 image sent as a stream-json message on
+# stdin with tools off (method A: --input-format stream-json --output-format stream-json --verbose), so it
+# also defaults to vision. Tesseract stays available with IMAGE_MODE=tesseract but is not needed.
+DEFAULT_IMAGE_MODE = {"api": "vision", "claude-code": "vision"}
 
 DEFAULT_DEMO_TODAY = "2026-11-20"
 DEFAULT_TIMEOUT = 120.0

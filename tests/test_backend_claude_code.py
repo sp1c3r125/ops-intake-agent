@@ -1,4 +1,5 @@
 """claude-code backend with subprocess.run mocked: the real CLI is never started."""
+import base64
 import json
 import subprocess
 
@@ -78,8 +79,40 @@ def test_every_failure_raises_backend_error(monkeypatch, kwargs, match):
         ClaudeCodeBackend().generate("S", "u")
 
 
-def test_images_are_refused_until_image_test_decides(monkeypatch):
-    calls = install(monkeypatch, {"result": "x"})
-    with pytest.raises(BackendError, match="image"):
-        ClaudeCodeBackend().generate("S", "u", image=(b"png", "image/png"))
-    assert calls == []                                                # nothing was run
+def stream_stdout(*objs):
+    return "\n".join(json.dumps(o) for o in objs) + "\n"
+
+
+def test_image_goes_through_stdin_as_stream_json(monkeypatch):
+    # Like the real CLI in stream-json mode: several event lines, the last one is the result object.
+    out = stream_stdout({"type": "system", "subtype": "init"},
+                        {"type": "assistant", "message": {}},
+                        {"type": "result", "is_error": False, "result": "x", "stop_reason": "tool_use",
+                         "structured_output": {"total": 12.5}})
+    calls = install(monkeypatch, stdout=out)
+    png = b"\x89PNG-not-a-real-image"
+    answer = ClaudeCodeBackend(timeout=30).generate("SYS", "Read it", schema=SCHEMA, image=(png, "image/png"))
+    assert json.loads(answer) == {"total": 12.5}
+
+    cmd, kwargs = calls[0]
+    assert cmd[cmd.index("--input-format") + 1] == "stream-json"
+    assert cmd[cmd.index("--output-format") + 1] == "stream-json" and "--verbose" in cmd
+    assert cmd[cmd.index("--tools") + 1] == "" and "--no-session-persistence" in cmd
+    assert kwargs["timeout"] == 30
+    msg = json.loads(kwargs["input"])                                 # one stream-json user message
+    blocks = msg["message"]["content"]
+    assert blocks[0]["type"] == "image" and blocks[0]["source"]["media_type"] == "image/png"
+    assert base64.b64decode(blocks[0]["source"]["data"]) == png
+    assert blocks[1] == {"type": "text", "text": "Read it"}
+    assert not any("PNG" in part or blocks[0]["source"]["data"] in part for part in cmd)  # no bytes in argv
+
+
+@pytest.mark.parametrize("stdout, match", [
+    (stream_stdout({"type": "system"}), "unreadable"),                # no result line
+    ("garbage", "unreadable"),
+    (stream_stdout({"type": "result", "is_error": True, "result": "bad"}), "reported an error"),
+])
+def test_image_call_failures_raise_backend_error(monkeypatch, stdout, match):
+    install(monkeypatch, stdout=stdout)
+    with pytest.raises(BackendError, match=match):
+        ClaudeCodeBackend().generate("S", "u", schema=SCHEMA, image=(b"png", "image/png"))
