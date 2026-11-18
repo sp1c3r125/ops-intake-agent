@@ -1,0 +1,17 @@
+consignment_no,consignee,suburb,dispatch_date,expected_date,packages,status
+KF-48201,Bellbird Hardware,Acacia Ridge,2026-11-09,2026-11-12,4,delivered
+KF-48202,Tern Street Pharmacy,Indooroopilly,2026-11-09,2026-11-12,2,delivered
+KF-48203,Lyrebird Cafe Supplies,Newstead,2026-11-10,2026-11-13,6,delivered
+KF-48204,Quokka Pet Store,Chermside,2026-11-10,2026-11-13,3,delivered
+KF-48205,Heron Bay Marine,Wynnum,2026-11-11,2026-11-16,8,delivered
+KF-48206,Saltbush Garden Centre,Mount Gravatt,2026-11-11,2026-11-16,12,delivered
+KF-48207,Wattle Street Books,West End,2026-11-12,2026-11-17,5,delivered
+KF-48208,Brolga Electrical Wholesale,Rocklea,2026-11-12,2026-11-17,7,delivered
+KF-48209,Kingfisher Print Works,Fortitude Valley,2026-11-13,2026-11-18,3,delivered
+KF-48210,Plover Medical Supplies,Herston,2026-11-13,2026-11-18,9,delivered
+KF-48211,Coolibah Furniture,Capalaba,2026-11-16,2026-11-23,10,in_transit
+KF-48212,Ibis Office Fitouts,Eagle Farm,2026-11-16,2026-11-19,6,delayed
+KF-48213,Pelican Imports,Pinkenba,2026-11-17,2026-11-24,14,customs_hold
+KF-48214,Currawong Cycles,Woolloongabba,2026-11-17,2026-11-24,4,in_transit
+KF-48215,Magpie Toys,Sunnybank,2026-11-18,2026-11-25,11,in_transit
+KF-48216,Jabiru Aquarium Supplies,Cannon Hill,2026-11-18,2026-11-25,2,awaiting_pickup

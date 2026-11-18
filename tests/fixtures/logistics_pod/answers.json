@@ -1,0 +1,102 @@
+{
+  "docket_01.png": {
+    "consignment_no": "KF-48201",
+    "recipient_name": "T. Morrison",
+    "delivered_at": "2026-11-12 10:42",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 4,
+    "confidence": 0.95
+  },
+  "docket_02.png": {
+    "consignment_no": "KF-48202",
+    "recipient_name": "L. Okafor",
+    "delivered_at": "2026-11-12 14:05",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 2,
+    "confidence": 0.96
+  },
+  "docket_03.png": {
+    "consignment_no": "KF-48203",
+    "recipient_name": "P. Hartley",
+    "delivered_at": "2026-11-13 09:18",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 6,
+    "confidence": 0.97
+  },
+  "docket_04.png": {
+    "consignment_no": "KF-48204",
+    "recipient_name": "D. Nakamura",
+    "delivered_at": "2026-11-13 16:30",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 3,
+    "confidence": 0.96
+  },
+  "docket_05.png": {
+    "consignment_no": "KF-48205",
+    "recipient_name": "S. Barrett",
+    "delivered_at": "2026-11-16 11:12",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 8,
+    "confidence": 0.92
+  },
+  "docket_06.png": {
+    "consignment_no": "KF-48206",
+    "recipient_name": "J. Quinlan",
+    "delivered_at": "2026-11-16 13:47",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 12,
+    "confidence": 0.95
+  },
+  "docket_07.png": {
+    "consignment_no": "KF-48207",
+    "recipient_name": "M. Castellano",
+    "delivered_at": "2026-11-17 10:20",
+    "signature_present": false,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 5,
+    "confidence": 0.9
+  },
+  "docket_08.png": {
+    "consignment_no": "KF-48208",
+    "recipient_name": "R. Gunawardena",
+    "delivered_at": "2026-11-17 15:05",
+    "signature_present": true,
+    "damage_noted": true,
+    "damage_note": "2 cartons crushed, 1 wet",
+    "packages_count": 7,
+    "confidence": 0.91
+  },
+  "docket_09.png": {
+    "consignment_no": "KF-48299",
+    "recipient_name": "A. Whitfield",
+    "delivered_at": "2026-11-18 09:40",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 2,
+    "confidence": 0.96
+  },
+  "docket_10.png": {
+    "consignment_no": "KF-48210",
+    "recipient_name": "C. Delacroix",
+    "delivered_at": "2026-11-18 12:25",
+    "signature_present": true,
+    "damage_noted": false,
+    "damage_note": null,
+    "packages_count": 7,
+    "confidence": 0.9
+  }
+}

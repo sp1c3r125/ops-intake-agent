@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "consignment_no": {"type": ["string", "null"]},
+    "recipient_name": {"type": ["string", "null"]},
+    "delivered_at": {"type": ["string", "null"]},
+    "signature_present": {"type": "boolean"},
+    "damage_noted": {"type": "boolean"},
+    "damage_note": {"type": ["string", "null"]},
+    "packages_count": {"type": ["integer", "null"]},
+    "confidence": {"type": "number"}
+  },
+  "required": ["consignment_no", "recipient_name", "delivered_at", "signature_present", "damage_noted", "damage_note", "packages_count", "confidence"],
+  "additionalProperties": false
+}
