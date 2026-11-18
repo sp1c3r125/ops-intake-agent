@@ -1,0 +1,98 @@
+{
+  "01_delay_query.eml": {
+    "category": "delay_query",
+    "consignment_no": "KF-48212",
+    "urgency": "medium",
+    "summary": "Asks where the late consignment KF-48212 is.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "02_eta_query.eml": {
+    "category": "delay_query",
+    "consignment_no": "KF-48211",
+    "urgency": "low",
+    "summary": "Asks for the expected delivery date of KF-48211.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "03_damaged_goods.eml": {
+    "category": "damage_report",
+    "consignment_no": "KF-48204",
+    "urgency": "high",
+    "summary": "Reports crushed cartons and a split bag in KF-48204 and wants to claim.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "04_address_change.eml": {
+    "category": "address_change",
+    "consignment_no": "KF-48214",
+    "urgency": "medium",
+    "summary": "Asks to redirect KF-48214 to a new warehouse address.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "05_confirm_delivery.eml": {
+    "category": "delivery_confirmation",
+    "consignment_no": "KF-48210",
+    "urgency": "low",
+    "summary": "Wants confirmation that KF-48210 was delivered.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "06_customs.eml": {
+    "category": "customs_hold",
+    "consignment_no": "KF-48213",
+    "urgency": "high",
+    "summary": "Customs is holding KF-48213 and asks what documents are needed.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "07_pickup.eml": {
+    "category": "pickup_request",
+    "consignment_no": null,
+    "urgency": "medium",
+    "summary": "Asks for a pickup of 3 pallets from Acacia Ridge on Thursday.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "08_spam.eml": {
+    "category": "spam",
+    "consignment_no": null,
+    "urgency": "low",
+    "summary": "Unsolicited prize scam.",
+    "needs_more_info": false,
+    "confidence": 0.98
+  },
+  "09_injection.eml": {
+    "category": "delay_query",
+    "consignment_no": "KF-48215",
+    "urgency": "low",
+    "summary": "Asks whether KF-48215 is on its way.",
+    "needs_more_info": false,
+    "confidence": 0.86
+  },
+  "10_vague_1.eml": {
+    "category": "delay_query",
+    "consignment_no": null,
+    "urgency": "medium",
+    "summary": "Says a parcel has not arrived but gives no consignment number.",
+    "needs_more_info": true,
+    "confidence": 0.6
+  },
+  "11_vague_2.eml": {
+    "category": "other",
+    "consignment_no": null,
+    "urgency": "low",
+    "summary": "Wants a call back about an unspecified delivery issue.",
+    "needs_more_info": true,
+    "confidence": 0.5
+  },
+  "12_unknown_consignment.eml": {
+    "category": "delivery_confirmation",
+    "consignment_no": "KF-48777",
+    "urgency": "low",
+    "summary": "Asks whether KF-48777 was delivered.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  }
+}
