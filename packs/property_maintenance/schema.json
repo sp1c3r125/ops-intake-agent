@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "issue_type": {"type": "string", "enum": ["plumbing", "electrical", "hvac", "appliance", "pest", "locks_security", "roof_leak", "other"]},
+    "urgency": {"type": "string", "enum": ["urgent", "routine"]},
+    "hazard": {"type": "string", "enum": ["gas_smell", "electrical_hazard", "flooding", "none"]},
+    "property_hint": {"type": ["string", "null"]},
+    "access_notes": {"type": ["string", "null"]},
+    "summary": {"type": "string"},
+    "needs_more_info": {"type": "boolean"},
+    "confidence": {"type": "number"}
+  },
+  "required": ["issue_type", "urgency", "hazard", "property_hint", "access_notes", "summary", "needs_more_info", "confidence"],
+  "additionalProperties": false
+}

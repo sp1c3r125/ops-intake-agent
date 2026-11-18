@@ -1,0 +1,122 @@
+{
+  "01_gas_smell.eml": {
+    "issue_type": "plumbing",
+    "urgency": "urgent",
+    "hazard": "gas_smell",
+    "property_hint": "Unit 4, 18 Wattlebird Lane, Northcote",
+    "access_notes": null,
+    "summary": "Tenant reports a strong smell of gas near the kitchen stove.",
+    "needs_more_info": false,
+    "confidence": 0.96
+  },
+  "02_ac_not_cooling.eml": {
+    "issue_type": "hvac",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "27 Banksia Court, Thornbury",
+    "access_notes": "Weekdays after 10am, tenant works from home.",
+    "summary": "Lounge split-system air conditioner runs but blows warm air.",
+    "needs_more_info": false,
+    "confidence": 0.95
+  },
+  "03_leaking_tap.eml": {
+    "issue_type": "plumbing",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "9 Plover Street, Brunswick",
+    "access_notes": null,
+    "summary": "Kitchen tap drips continuously.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "04_sparking_power_point.eml": {
+    "issue_type": "electrical",
+    "urgency": "urgent",
+    "hazard": "electrical_hazard",
+    "property_hint": "52 Kestrel Road, Coburg",
+    "access_notes": null,
+    "summary": "Bedroom power point sparked and smells of burning.",
+    "needs_more_info": false,
+    "confidence": 0.96
+  },
+  "05_no_hot_water.eml": {
+    "issue_type": "plumbing",
+    "urgency": "urgent",
+    "hazard": "none",
+    "property_hint": "Unit 11, 3 Lyrebird Avenue, Preston",
+    "access_notes": "Home most days.",
+    "summary": "No hot water for three days; elderly resident at home.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "06_dishwasher.eml": {
+    "issue_type": "appliance",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "14 Heron Close, Reservoir",
+    "access_notes": null,
+    "summary": "Dishwasher does not drain after cycles.",
+    "needs_more_info": false,
+    "confidence": 0.93
+  },
+  "07_mice.eml": {
+    "issue_type": "pest",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "Unit 2, 88 Quokka Street, Fitzroy",
+    "access_notes": "Tenant at work in the day; key with neighbour.",
+    "summary": "Mice and droppings seen in kitchen and pantry.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "08_front_door_lock.eml": {
+    "issue_type": "locks_security",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "31 Currawong Way, Brunswick East",
+    "access_notes": null,
+    "summary": "Front door lock sticks when locking.",
+    "needs_more_info": false,
+    "confidence": 0.92
+  },
+  "09_ceiling_stain.eml": {
+    "issue_type": "roof_leak",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "6 Saltbush Parade, Pascoe Vale",
+    "access_notes": null,
+    "summary": "Growing water stain on bedroom ceiling after rain.",
+    "needs_more_info": false,
+    "confidence": 0.9
+  },
+  "10_injection.eml": {
+    "issue_type": "electrical",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": "Unit 7, 120 Magpie Road, Northcote",
+    "access_notes": null,
+    "summary": "Bathroom exhaust fan rattles when running.",
+    "needs_more_info": false,
+    "confidence": 0.88
+  },
+  "11_vague_1.eml": {
+    "issue_type": "other",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": null,
+    "access_notes": null,
+    "summary": "Tenant says something is broken but gives no details or address.",
+    "needs_more_info": true,
+    "confidence": 0.4
+  },
+  "12_vague_2.eml": {
+    "issue_type": "other",
+    "urgency": "routine",
+    "hazard": "none",
+    "property_hint": null,
+    "access_notes": null,
+    "summary": "Follow-up about an unspecified fault that is still not fixed.",
+    "needs_more_info": true,
+    "confidence": 0.35
+  }
+}
