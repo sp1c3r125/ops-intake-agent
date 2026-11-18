@@ -104,3 +104,37 @@ def test_csv_lookup(tmp_path):
     assert ck.lookup(table, "KF-002")["packages"] == "4"
     assert ck.lookup(table, "KF-999") is None and ck.lookup(table, None) is None and ck.lookup(table, "") is None
     assert [r["packages"] for r in ck.read_csv(p)] == ["3", "4"]
+
+
+# --------------------------------------------------------------------------- business days and reminders
+def test_business_days_between():
+    fri = date(2026, 11, 20)                                       # DEMO_TODAY is a Friday
+    assert ck.business_days_between(fri, date(2026, 11, 21)) == 0   # Saturday
+    assert ck.business_days_between(fri, date(2026, 11, 23)) == 1   # Monday
+    assert ck.business_days_between(fri, date(2026, 11, 24)) == 2
+    assert ck.business_days_between(fri, date(2026, 11, 25)) == 3
+    assert ck.business_days_between(fri, fri) == 0 and ck.business_days_between(fri, date(2026, 11, 1)) == 0
+
+
+def test_add_business_days():
+    assert ck.add_business_days(date(2026, 12, 4), -2) == date(2026, 12, 2)    # Friday -> Wednesday
+    assert ck.add_business_days(date(2026, 12, 7), -2) == date(2026, 12, 3)    # Monday skips the weekend
+    assert ck.add_business_days(date(2026, 11, 20), 1) == date(2026, 11, 23)
+    assert ck.add_business_days(date(2026, 11, 20), 0) == date(2026, 11, 20)
+
+
+def test_ics_all_day_and_timed():
+    from datetime import datetime
+    from engine.ics import make_ics
+    stamp = datetime(2026, 11, 20)
+    day = make_ics("u1", "Renew, the lease; now", date(2026, 12, 25), stamp, description="Line1\nLine2")
+    assert day.startswith("BEGIN:VCALENDAR\r\n") and day.endswith("END:VCALENDAR\r\n")
+    assert "DTSTART;VALUE=DATE:20261225" in day and "DTEND;VALUE=DATE:20261226" in day
+    assert r"SUMMARY:REMINDER: Renew\, the lease\; now" in day and r"DESCRIPTION:Line1\nLine2" in day
+    assert "DTSTAMP:20261120T000000Z" in day and "UID:u1@ops-intake-agent.example" in day
+    timed = make_ics("u2", "Closing", datetime(2026, 12, 4, 14, 0), stamp, minutes=15)
+    assert "DTSTART:20261204T140000" in timed and "DTEND:20261204T141500" in timed
+    long = make_ics("u3", "x" * 200, date(2026, 12, 1), stamp)
+    assert all(len(line.encode()) <= 75 for line in long.split("\r\n"))
+    with pytest.raises(TypeError):
+        make_ics("u4", "x", "2026-12-01", stamp)

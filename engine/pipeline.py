@@ -194,7 +194,8 @@ def _record(item, route, reasons, data=None, ex=None, error=None, produced=None)
     return {"item": item.id, "route": route, "reasons": reasons,
             "confidence": data.get("confidence") if data else None, "data": data,
             "retried": bool(ex and ex.retried), "first_error": ex.first_error if ex else None,
-            "error": error, "outputs": _summarise_outputs(produced) if produced else []}
+            "error": error, "row": item.row,   # row: the CSV row for csv_rows items (e.g. the review rating)
+            "outputs": _summarise_outputs(produced) if produced else []}
 
 
 def process_item(pack, item, ref, backend, log):

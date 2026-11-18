@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import csv
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
@@ -143,6 +143,26 @@ def date_order_ok(earlier, later, strict=False):
     if a is None or b is None:
         return False
     return a < b if strict else a <= b
+
+
+def business_days_between(start, end):
+    """Weekdays (Mon to Fri) in the range after `start` up to and including `end`. 0 if end is not after
+    start. Public holidays are not known to this function."""
+    if end <= start:
+        return 0
+    days = (end - start).days
+    return sum(1 for n in range(1, days + 1) if (start + timedelta(days=n)).weekday() < 5)
+
+
+def add_business_days(day, n):
+    """The date n business days before (n negative) or after (n positive) `day`."""
+    step = 1 if n >= 0 else -1
+    remaining = abs(n)
+    while remaining:
+        day += timedelta(days=step)
+        if day.weekday() < 5:
+            remaining -= 1
+    return day
 
 
 # --------------------------------------------------------------------------- duplicates

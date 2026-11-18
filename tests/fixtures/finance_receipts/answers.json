@@ -1,0 +1,226 @@
+{
+  "receipt_01.png": {
+    "merchant": "Fitzroy Corner Cafe",
+    "date": "2026-11-12",
+    "currency": "AUD",
+    "subtotal": 27.5,
+    "tax": 2.75,
+    "total": 30.25,
+    "payment_method": "card",
+    "category": "meals",
+    "line_items": [
+      {
+        "description": "2 x Flat white",
+        "amount": 9.0
+      },
+      {
+        "description": "Avocado toast",
+        "amount": 18.5
+      }
+    ],
+    "confidence": 0.91
+  },
+  "receipt_02.png": {
+    "merchant": "Southbank Fuel Stop",
+    "date": "2026-11-05",
+    "currency": "AUD",
+    "subtotal": 82.4,
+    "tax": 8.24,
+    "total": 90.64,
+    "payment_method": "card",
+    "category": "fuel",
+    "line_items": [
+      {
+        "description": "Unleaded 41.2L",
+        "amount": 82.4
+      }
+    ],
+    "confidence": 0.94
+  },
+  "receipt_03.png": {
+    "merchant": "Collins Street Stationers",
+    "date": "2026-10-29",
+    "currency": "AUD",
+    "subtotal": 30.4,
+    "tax": 3.04,
+    "total": 33.44,
+    "payment_method": "card",
+    "category": "office",
+    "line_items": [
+      {
+        "description": "A4 paper 2 reams",
+        "amount": 18.0
+      },
+      {
+        "description": "Pens x 10",
+        "amount": 12.4
+      }
+    ],
+    "confidence": 0.94
+  },
+  "receipt_04.png": {
+    "merchant": "Docklands Taxi Co",
+    "date": "2026-11-10",
+    "currency": "AUD",
+    "subtotal": 38.0,
+    "tax": 3.8,
+    "total": 41.8,
+    "payment_method": "card",
+    "category": "travel",
+    "line_items": [
+      {
+        "description": "Fare: CBD to Docklands",
+        "amount": 38.0
+      }
+    ],
+    "confidence": 0.96
+  },
+  "receipt_05.png": {
+    "merchant": "Carlton Bistro",
+    "date": "2026-11-18",
+    "currency": "AUD",
+    "subtotal": 96.0,
+    "tax": 9.6,
+    "total": 105.6,
+    "payment_method": "card",
+    "category": "meals",
+    "line_items": [
+      {
+        "description": "Client lunch x 3",
+        "amount": 84.0
+      },
+      {
+        "description": "Sparkling water",
+        "amount": 12.0
+      }
+    ],
+    "confidence": 0.91
+  },
+  "receipt_06.png": {
+    "merchant": "Harbour View Hotel",
+    "date": "2026-11-03",
+    "currency": "AUD",
+    "subtotal": 210.0,
+    "tax": 21.0,
+    "total": 231.0,
+    "payment_method": "card",
+    "category": "accommodation",
+    "line_items": [
+      {
+        "description": "Room 1 night",
+        "amount": 210.0
+      }
+    ],
+    "confidence": 0.92
+  },
+  "receipt_07.png": {
+    "merchant": "Brunswick Print Shop",
+    "date": "2026-11-16",
+    "currency": "AUD",
+    "subtotal": 55.0,
+    "tax": 5.5,
+    "total": 60.5,
+    "payment_method": "cash",
+    "category": "office",
+    "line_items": [
+      {
+        "description": "Business cards x 250",
+        "amount": 55.0
+      }
+    ],
+    "confidence": 0.94
+  },
+  "receipt_08.png": {
+    "merchant": "Prahran Pizza Bar",
+    "date": "2026-11-13",
+    "currency": "AUD",
+    "subtotal": 44.0,
+    "tax": 4.4,
+    "total": 48.4,
+    "payment_method": "card",
+    "category": "meals",
+    "line_items": [
+      {
+        "description": "Pizza x 2",
+        "amount": 32.0
+      },
+      {
+        "description": "Drinks",
+        "amount": 12.0
+      }
+    ],
+    "confidence": 0.52
+  },
+  "receipt_09.png": {
+    "merchant": "Richmond Fuel and Convenience",
+    "date": "2026-11-09",
+    "currency": "AUD",
+    "subtotal": 61.0,
+    "tax": 6.1,
+    "total": null,
+    "payment_method": "card",
+    "category": "fuel",
+    "line_items": [
+      {
+        "description": "Diesel 33.0L",
+        "amount": 61.0
+      }
+    ],
+    "confidence": 0.61
+  },
+  "receipt_10.png": {
+    "merchant": "Collins Street Stationers",
+    "date": "2026-10-29",
+    "currency": "AUD",
+    "subtotal": 30.4,
+    "tax": 3.04,
+    "total": 33.44,
+    "payment_method": "card",
+    "category": "office",
+    "line_items": [
+      {
+        "description": "A4 paper 2 reams",
+        "amount": 18.0
+      },
+      {
+        "description": "Pens x 10",
+        "amount": 12.4
+      }
+    ],
+    "confidence": 0.94
+  },
+  "receipt_11.png": {
+    "merchant": "Melbourne Meeting Rooms",
+    "date": "2026-11-11",
+    "currency": "AUD",
+    "subtotal": 311.0,
+    "tax": 31.1,
+    "total": 342.1,
+    "payment_method": "card",
+    "category": "office",
+    "line_items": [
+      {
+        "description": "Training room hire",
+        "amount": 311.0
+      }
+    ],
+    "confidence": 0.95
+  },
+  "receipt_12.png": {
+    "merchant": "Northcote Bakery Cafe",
+    "date": "2026-11-17",
+    "currency": "AUD",
+    "subtotal": 50.0,
+    "tax": 7.5,
+    "total": 57.5,
+    "payment_method": "card",
+    "category": "meals",
+    "line_items": [
+      {
+        "description": "Lunch order",
+        "amount": 50.0
+      }
+    ],
+    "confidence": 0.94
+  }
+}

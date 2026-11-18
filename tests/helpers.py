@@ -53,6 +53,58 @@ class MockBackend:
         return [c for c in self.calls if c["schema"] is not None]
 
 
+PACKS = Path(__file__).resolve().parents[1] / "packs"
+FIXTURES = Path(__file__).parent / "fixtures"
+DEFAULT_DRAFT = "Thank you for getting in touch. [STAFF TO CONFIRM: details]\n\nKind regards"
+
+
+class SequenceBackend:
+    """Answers extract calls from a list, in order (the pipeline processes items in sorted order).
+    Plain-text calls (drafts) get `draft_reply`. Records every call."""
+    name = "mock"
+
+    def __init__(self, answers, draft_reply=DEFAULT_DRAFT):
+        self.answers, self.draft_reply, self.calls, self._n = list(answers), draft_reply, [], 0
+
+    def generate(self, system, user_text, schema=None, image=None):
+        self.calls.append({"system": system, "user": user_text, "schema": schema, "image": image})
+        if schema is None:
+            if isinstance(self.draft_reply, Exception):
+                raise self.draft_reply
+            return self.draft_reply
+        if self._n >= len(self.answers):
+            raise BackendError("mock: out of canned answers")
+        answer = self.answers[self._n]
+        self._n += 1
+        return json.dumps(answer) if not isinstance(answer, str) else answer
+
+    def extract_calls(self):
+        return [c for c in self.calls if c["schema"] is not None]
+
+    def draft_calls(self):
+        return [c for c in self.calls if c["schema"] is None]
+
+
+def load_answers(pack_name):
+    return json.loads((FIXTURES / pack_name / "answers.json").read_text(encoding="utf-8"))
+
+
+def run_real_pack(pack_name, tmp_path, draft_reply=DEFAULT_DRAFT, cfg=None, answers=None, image_mode="vision"):
+    """End-to-end run of packs/<pack_name> with canned answers from tests/fixtures/<pack_name>/answers.json.
+    Returns (summary, {item id: result}, backend, output folder)."""
+    from engine import inputs, pipeline
+    cfg = cfg or make_cfg(image_mode=image_mode)
+    pack = pipeline.load_pack(PACKS / pack_name)
+    items = inputs.load_items(pack.input_kind, pack.dir, pack.input_glob, cfg.image_mode)
+    answers = answers or load_answers(pack_name)
+    ordered = [answers[i.id] for i in items if not i.preset_reason]
+    backend = SequenceBackend(ordered, draft_reply)
+    summary = pipeline.run_pack(pack, items, backend, cfg, tmp_path)
+    out = tmp_path / pack_name
+    results = json.loads((out / "results.json").read_text(encoding="utf-8"))["items"]
+    return summary, {r["item"]: r for r in results}, backend, out
+
+
 def make_cfg(today=date(2026, 11, 20), image_mode="vision"):
     return config.Config(backend="claude-code", image_mode=image_mode, demo_today=today)
 

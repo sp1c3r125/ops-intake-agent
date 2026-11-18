@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "merchant": {"type": ["string", "null"]},
+    "date": {"type": ["string", "null"]},
+    "currency": {"type": ["string", "null"]},
+    "subtotal": {"type": ["number", "null"]},
+    "tax": {"type": ["number", "null"]},
+    "total": {"type": ["number", "null"]},
+    "payment_method": {"type": "string", "enum": ["card", "cash", "unknown"]},
+    "category": {"type": "string", "enum": ["meals", "travel", "fuel", "office", "accommodation", "other"]},
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {"type": "string"},
+          "amount": {"type": ["number", "null"]}
+        },
+        "required": ["description", "amount"],
+        "additionalProperties": false
+      }
+    },
+    "confidence": {"type": "number"}
+  },
+  "required": ["merchant", "date", "currency", "subtotal", "tax", "total", "payment_method", "category", "confidence"],
+  "additionalProperties": false
+}
