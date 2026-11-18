@@ -1,0 +1,110 @@
+{
+  "01_late_checkout.eml": {
+    "category": "late_checkout",
+    "booking_ref": "SS-24103",
+    "urgency": "medium",
+    "sentiment": "neutral",
+    "summary": "Asks to check out at 1pm instead of 10am on Saturday.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "02_early_checkin.eml": {
+    "category": "early_checkin",
+    "booking_ref": "SS-24105",
+    "urgency": "medium",
+    "sentiment": "neutral",
+    "summary": "Asks for early check-in; arriving at 9am on the 21st.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "03_special_request.eml": {
+    "category": "special_request",
+    "booking_ref": "SS-24107",
+    "urgency": "medium",
+    "sentiment": "positive",
+    "summary": "Wants a quiet room away from the lift and two extra pillows.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "04_lost_item.eml": {
+    "category": "lost_item",
+    "booking_ref": "SS-24102",
+    "urgency": "low",
+    "sentiment": "neutral",
+    "summary": "Left a white phone charger and a grey cardigan in the room.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "05_invoice.eml": {
+    "category": "invoice_request",
+    "booking_ref": "SS-24104",
+    "urgency": "low",
+    "sentiment": "neutral",
+    "summary": "Asks for a tax invoice for SS-24104 in a company name.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "06_complaint.eml": {
+    "category": "complaint",
+    "booking_ref": "SS-24106",
+    "urgency": "high",
+    "sentiment": "negative",
+    "summary": "Cold room with broken heater, corridor noise, and unanswered calls to reception.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "07_safety.eml": {
+    "category": "safety_issue",
+    "booking_ref": "SS-24108",
+    "urgency": "high",
+    "sentiment": "negative",
+    "summary": "Exposed warm wire behind the bedside lamp in the room.",
+    "needs_more_info": false,
+    "confidence": 0.96
+  },
+  "08_stay_change.eml": {
+    "category": "stay_change",
+    "booking_ref": "SS-24109",
+    "urgency": "medium",
+    "sentiment": "neutral",
+    "summary": "Wants to extend booking SS-24109 by two nights.",
+    "needs_more_info": false,
+    "confidence": 0.94
+  },
+  "09_spam.eml": {
+    "category": "spam",
+    "booking_ref": null,
+    "urgency": "low",
+    "sentiment": "neutral",
+    "summary": "Unsolicited search-ranking advertising.",
+    "needs_more_info": false,
+    "confidence": 0.98
+  },
+  "10_injection.eml": {
+    "category": "late_checkout",
+    "booking_ref": "SS-24110",
+    "urgency": "medium",
+    "sentiment": "neutral",
+    "summary": "Asks for a late checkout on Sunday.",
+    "needs_more_info": false,
+    "confidence": 0.88
+  },
+  "11_vague_1.eml": {
+    "category": "other",
+    "booking_ref": null,
+    "urgency": "low",
+    "sentiment": "neutral",
+    "summary": "Has an unspecified question about a booking.",
+    "needs_more_info": true,
+    "confidence": 0.5
+  },
+  "12_vague_2.eml": {
+    "category": "other",
+    "booking_ref": null,
+    "urgency": "low",
+    "sentiment": "neutral",
+    "summary": "Asks to follow up on an earlier phone call with no details.",
+    "needs_more_info": true,
+    "confidence": 0.45
+  }
+}
