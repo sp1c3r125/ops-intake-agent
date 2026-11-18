@@ -1,0 +1,171 @@
+{
+  "R-3001": {
+    "topics": [
+      "room",
+      "staff",
+      "location"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Loved the harbour view and the helpful receptionist.",
+    "confidence": 0.93
+  },
+  "R-3002": {
+    "topics": [
+      "breakfast"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Praised the breakfast, especially the eggs and fresh bread.",
+    "confidence": 0.93
+  },
+  "R-3003": {
+    "topics": [
+      "cleanliness",
+      "room",
+      "check_in"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Clean, comfortable room and quick check-in; lift was slow.",
+    "confidence": 0.93
+  },
+  "R-3004": {
+    "topics": [
+      "location"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Happy with the location near the ferry and markets.",
+    "confidence": 0.93
+  },
+  "R-3005": {
+    "topics": [
+      "staff",
+      "value",
+      "room"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Friendly staff and good value; the room was small.",
+    "confidence": 0.93
+  },
+  "R-3006": {
+    "topics": [
+      "room",
+      "staff"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Anniversary made special by a card and flowers in the room.",
+    "confidence": 0.93
+  },
+  "R-3007": {
+    "topics": [
+      "room",
+      "noise"
+    ],
+    "sentiment": "neutral",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Pleasant room but loud street noise on Friday night.",
+    "confidence": 0.93
+  },
+  "R-3008": {
+    "topics": [
+      "cleanliness",
+      "room"
+    ],
+    "sentiment": "negative",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Bathroom not clean on arrival: hair in the shower and damp towels.",
+    "confidence": 0.93
+  },
+  "R-3009": {
+    "topics": [
+      "check_in",
+      "staff"
+    ],
+    "sentiment": "negative",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Long wait to check in and a rude front desk experience.",
+    "confidence": 0.93
+  },
+  "R-3010": {
+    "topics": [
+      "value",
+      "room",
+      "staff"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Good value, comfortable beds and helpful staff.",
+    "confidence": 0.93
+  },
+  "R-3011": {
+    "topics": [
+      "room",
+      "noise"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Quiet, cosy stay.",
+    "confidence": 0.88
+  },
+  "R-3012": {
+    "topics": [
+      "location",
+      "room",
+      "breakfast"
+    ],
+    "sentiment": "neutral",
+    "mentions_safety_or_health": true,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Good location and tidy room, but felt unwell after breakfast and suspects the eggs.",
+    "confidence": 0.93
+  },
+  "R-3013": {
+    "topics": [
+      "value",
+      "room"
+    ],
+    "sentiment": "negative",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Thought the room was small and overpriced.",
+    "confidence": 0.93
+  },
+  "R-3014": {
+    "topics": [
+      "location",
+      "breakfast"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Comfortable, well located; breakfast good but croissants ran out.",
+    "confidence": 0.93
+  },
+  "R-3015": {
+    "topics": [
+      "staff",
+      "room",
+      "cleanliness"
+    ],
+    "sentiment": "positive",
+    "mentions_safety_or_health": false,
+    "mentions_legal_or_discrimination": false,
+    "summary": "Wonderful staff with young children and a spotless room.",
+    "confidence": 0.93
+  }
+}

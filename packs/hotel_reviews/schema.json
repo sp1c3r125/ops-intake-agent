@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "topics": {
+      "type": "array",
+      "items": {"type": "string", "enum": ["cleanliness", "staff", "location", "noise", "breakfast", "value", "room", "check_in", "other"]}
+    },
+    "sentiment": {"type": "string", "enum": ["negative", "neutral", "positive"]},
+    "mentions_safety_or_health": {"type": "boolean"},
+    "mentions_legal_or_discrimination": {"type": "boolean"},
+    "summary": {"type": "string"},
+    "confidence": {"type": "number"}
+  },
+  "required": ["topics", "sentiment", "mentions_safety_or_health", "mentions_legal_or_discrimination", "summary", "confidence"],
+  "additionalProperties": false
+}
