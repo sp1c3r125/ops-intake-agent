@@ -1,0 +1,1 @@
+Invoice from Acme Parts dated 2026-11-01. Subtotal 100.00, tax 10.00, total 110.00.
