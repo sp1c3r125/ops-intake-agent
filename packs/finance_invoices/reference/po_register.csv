@@ -1,0 +1,9 @@
+po_number,supplier,amount,status
+PO-7001,Banksia Office Supplies Pty Ltd,1200.00,open
+PO-7002,Kookaburra Cleaning Services Pty Ltd,2400.00,open
+PO-7003,Lyrebird IT Support Pty Ltd,5500.00,open
+PO-7004,Plover Courier Co Pty Ltd,800.00,open
+PO-7005,Wattle Print and Signs Pty Ltd,950.00,open
+PO-7006,Saltbush Catering Pty Ltd,1800.00,open
+PO-7007,Heron Furniture Hire Pty Ltd,6000.00,open
+PO-7008,Banksia Office Supplies Pty Ltd,400.00,closed

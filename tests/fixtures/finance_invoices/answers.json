@@ -1,0 +1,242 @@
+{
+  "invoice_01.pdf": {
+    "supplier": "Banksia Office Supplies Pty Ltd",
+    "abn": "00 000 000 011",
+    "invoice_number": "INV-2201",
+    "invoice_date": "2026-10-30",
+    "due_date": "2026-11-29",
+    "po_number": "PO-7001",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "A4 copy paper (carton)",
+        "qty": 20.0,
+        "unit_price": 12.5,
+        "amount": 250.0
+      },
+      {
+        "description": "Laser toner cartridge",
+        "qty": 4.0,
+        "unit_price": 85.0,
+        "amount": 340.0
+      }
+    ],
+    "subtotal": 590.0,
+    "tax": 59.0,
+    "total": 649.0,
+    "confidence": 0.97
+  },
+  "invoice_02.pdf": {
+    "supplier": "Kookaburra Cleaning Services Pty Ltd",
+    "abn": "00 000 000 022",
+    "invoice_number": "INV-0457",
+    "invoice_date": "2026-11-02",
+    "due_date": "2026-12-02",
+    "po_number": "PO-7002",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Office cleaning, October 2026",
+        "qty": 1.0,
+        "unit_price": 1800.0,
+        "amount": 1800.0
+      }
+    ],
+    "subtotal": 1800.0,
+    "tax": 180.0,
+    "total": 1980.0,
+    "confidence": 0.95
+  },
+  "invoice_03.pdf": {
+    "supplier": "Lyrebird IT Support Pty Ltd",
+    "abn": "00 000 000 033",
+    "invoice_number": "INV-9034",
+    "invoice_date": "2026-11-05",
+    "due_date": "2026-12-05",
+    "po_number": "PO-7003",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Managed IT support, November",
+        "qty": 1.0,
+        "unit_price": 3200.0,
+        "amount": 3200.0
+      },
+      {
+        "description": "Laptop setup",
+        "qty": 3.0,
+        "unit_price": 150.0,
+        "amount": 450.0
+      }
+    ],
+    "subtotal": 3650.0,
+    "tax": 365.0,
+    "total": 4015.0,
+    "confidence": 0.93
+  },
+  "invoice_04.pdf": {
+    "supplier": "Plover Courier Co Pty Ltd",
+    "abn": "00 000 000 044",
+    "invoice_number": "INV-3318",
+    "invoice_date": "2026-11-06",
+    "due_date": "2026-11-20",
+    "po_number": "PO-7004",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Courier run, metro",
+        "qty": 14.0,
+        "unit_price": 38.0,
+        "amount": 532.0
+      }
+    ],
+    "subtotal": 532.0,
+    "tax": 53.2,
+    "total": 585.2,
+    "confidence": 0.96
+  },
+  "invoice_05.pdf": {
+    "supplier": "Wattle Print and Signs Pty Ltd",
+    "abn": "00 000 000 055",
+    "invoice_number": "INV-1187",
+    "invoice_date": "2026-11-09",
+    "due_date": "2026-12-09",
+    "po_number": "PO-7005",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Reception signage panel",
+        "qty": 2.0,
+        "unit_price": 310.0,
+        "amount": 620.0
+      }
+    ],
+    "subtotal": 620.0,
+    "tax": 62.0,
+    "total": 682.0,
+    "confidence": 0.94
+  },
+  "invoice_06.pdf": {
+    "supplier": "Saltbush Catering Pty Ltd",
+    "abn": "00 000 000 066",
+    "invoice_number": "INV-662",
+    "invoice_date": "2026-11-10",
+    "due_date": "2026-12-10",
+    "po_number": "PO-7006",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Catering, client workshop (per head)",
+        "qty": 30.0,
+        "unit_price": 42.0,
+        "amount": 1260.0
+      },
+      {
+        "description": "Delivery",
+        "qty": 1.0,
+        "unit_price": 60.0,
+        "amount": 60.0
+      }
+    ],
+    "subtotal": 1320.0,
+    "tax": 132.0,
+    "total": 1452.0,
+    "confidence": 0.97
+  },
+  "invoice_07.pdf": {
+    "supplier": "Plover Courier Co Pty Ltd",
+    "abn": "00 000 000 044",
+    "invoice_number": "INV-3320",
+    "invoice_date": "2026-11-12",
+    "due_date": "2026-11-26",
+    "po_number": null,
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Courier run, metro",
+        "qty": 9.0,
+        "unit_price": 38.0,
+        "amount": 342.0
+      }
+    ],
+    "subtotal": 342.0,
+    "tax": 34.2,
+    "total": 376.2,
+    "confidence": 0.95
+  },
+  "invoice_08.pdf": {
+    "supplier": "Heron Furniture Hire Pty Ltd",
+    "abn": "00 000 000 077",
+    "invoice_number": "INV-5521",
+    "invoice_date": "2026-11-13",
+    "due_date": "2026-12-13",
+    "po_number": "PO-7007",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Boardroom furniture hire, 4 weeks",
+        "qty": 4.0,
+        "unit_price": 1550.0,
+        "amount": 6200.0
+      }
+    ],
+    "subtotal": 6200.0,
+    "tax": 620.0,
+    "total": 6820.0,
+    "confidence": 0.93
+  },
+  "invoice_09.pdf": {
+    "supplier": "Banksia Office Supplies Pty Ltd",
+    "abn": "00 000 000 011",
+    "invoice_number": "INV-2201",
+    "invoice_date": "2026-10-30",
+    "due_date": "2026-11-29",
+    "po_number": "PO-7001",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "A4 copy paper (carton)",
+        "qty": 20.0,
+        "unit_price": 12.5,
+        "amount": 250.0
+      },
+      {
+        "description": "Laser toner cartridge",
+        "qty": 4.0,
+        "unit_price": 85.0,
+        "amount": 340.0
+      }
+    ],
+    "subtotal": 590.0,
+    "tax": 59.0,
+    "total": 649.0,
+    "confidence": 0.96
+  },
+  "invoice_10.pdf": {
+    "supplier": "Saltbush Catering Pty Ltd",
+    "abn": "00 000 000 066",
+    "invoice_number": "INV-671",
+    "invoice_date": "2026-11-16",
+    "due_date": "2026-12-16",
+    "po_number": "PO-7006",
+    "currency": "AUD",
+    "line_items": [
+      {
+        "description": "Catering, client workshop (per head)",
+        "qty": 30.0,
+        "unit_price": 42.0,
+        "amount": 1260.0
+      },
+      {
+        "description": "Delivery",
+        "qty": 1.0,
+        "unit_price": 60.0,
+        "amount": 60.0
+      }
+    ],
+    "subtotal": 1380.0,
+    "tax": 138.0,
+    "total": 1518.0,
+    "confidence": 0.94
+  }
+}

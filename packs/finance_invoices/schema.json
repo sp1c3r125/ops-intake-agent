@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "supplier": {"type": "string"},
+    "abn": {"type": "string"},
+    "invoice_number": {"type": "string"},
+    "invoice_date": {"type": "string"},
+    "due_date": {"type": "string"},
+    "po_number": {"type": ["string", "null"]},
+    "currency": {"type": "string"},
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {"type": "string"},
+          "qty": {"type": "number"},
+          "unit_price": {"type": "number"},
+          "amount": {"type": "number"}
+        },
+        "required": ["description", "qty", "unit_price", "amount"],
+        "additionalProperties": false
+      }
+    },
+    "subtotal": {"type": "number"},
+    "tax": {"type": "number"},
+    "total": {"type": "number"},
+    "confidence": {"type": "number"}
+  },
+  "required": ["supplier", "abn", "invoice_number", "invoice_date", "due_date", "po_number", "currency", "line_items", "subtotal", "tax", "total", "confidence"],
+  "additionalProperties": false
+}
