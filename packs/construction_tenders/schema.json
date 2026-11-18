@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "project_name": {"type": "string"},
+    "client_name": {"type": "string"},
+    "site_suburb": {"type": ["string", "null"]},
+    "trades_in_scope": {
+      "type": "array",
+      "items": {"type": "string", "enum": ["hvac", "mechanical", "electrical", "plumbing", "fire", "civil", "other"]}
+    },
+    "closing_datetime": {"type": ["string", "null"]},
+    "site_visit_datetime": {"type": ["string", "null"]},
+    "documents_link": {"type": ["string", "null"]},
+    "contact_email": {"type": ["string", "null"]},
+    "summary": {"type": "string"},
+    "confidence": {"type": "number"}
+  },
+  "required": ["project_name", "client_name", "site_suburb", "trades_in_scope", "closing_datetime", "site_visit_datetime", "documents_link", "contact_email", "summary", "confidence"],
+  "additionalProperties": false
+}

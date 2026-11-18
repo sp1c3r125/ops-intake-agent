@@ -1,0 +1,148 @@
+{
+  "01_docklands_hvac.eml": {
+    "project_name": "Docklands Apartments Stage 2",
+    "client_name": "Harbourline Constructions",
+    "site_suburb": "Docklands",
+    "trades_in_scope": [
+      "hvac",
+      "mechanical"
+    ],
+    "closing_datetime": "2026-12-04 14:00",
+    "site_visit_datetime": "2026-11-24 10:00",
+    "documents_link": "https://tenders.harbourlineconstructions.example/docklands-s2",
+    "contact_email": "priya.raman@harbourlineconstructions.example",
+    "summary": "Invitation to tender for the HVAC package on Docklands Apartments Stage 2.",
+    "confidence": 0.94
+  },
+  "02_hospital_mechanical.eml": {
+    "project_name": "Kestrel Hill Hospital mechanical services upgrade",
+    "client_name": "Bellman Build",
+    "site_suburb": "Heidelberg",
+    "trades_in_scope": [
+      "mechanical",
+      "fire"
+    ],
+    "closing_datetime": "2026-12-11 12:00",
+    "site_visit_datetime": "2026-12-01 09:30",
+    "documents_link": "https://portal.bellmanbuild.example/kestrel-hill",
+    "contact_email": "neil.okonjo@bellmanbuild.example",
+    "summary": "Seeks tenders for the mechanical and fire services upgrade at Kestrel Hill Hospital.",
+    "confidence": 0.94
+  },
+  "03_school_gym.eml": {
+    "project_name": "Lakeview Secondary College Gymnasium HVAC",
+    "client_name": "Orchard Point Projects",
+    "site_suburb": "Doncaster East",
+    "trades_in_scope": [
+      "hvac"
+    ],
+    "closing_datetime": "2026-12-09 17:00",
+    "site_visit_datetime": null,
+    "documents_link": "https://orchardpoint.example/tenders/lakeview-gym",
+    "contact_email": "anika@orchardpoint.example",
+    "summary": "Invitation to price HVAC for a new gymnasium at Lakeview Secondary College.",
+    "confidence": 0.94
+  },
+  "04_landscaping_civil.eml": {
+    "project_name": "Riverbend Reserve landscaping and civil works",
+    "client_name": "Riverbend Civil",
+    "site_suburb": "Sunshine",
+    "trades_in_scope": [
+      "civil",
+      "other"
+    ],
+    "closing_datetime": "2026-12-02 15:00",
+    "site_visit_datetime": null,
+    "documents_link": "https://riverbendcivil.example/reserve",
+    "contact_email": "tony@riverbendcivil.example",
+    "summary": "Tender for landscaping, drainage and civil works at Riverbend Reserve.",
+    "confidence": 0.94
+  },
+  "05_closes_tomorrow.eml": {
+    "project_name": "Sandpiper Medical Centre fitout",
+    "client_name": "Sandpiper Build",
+    "site_suburb": "Brighton",
+    "trades_in_scope": [
+      "hvac"
+    ],
+    "closing_datetime": "2026-11-21 12:00",
+    "site_visit_datetime": null,
+    "documents_link": "https://sandpiperbuild.example/tender/medical-centre",
+    "contact_email": "harriet.voss@sandpiperbuild.example",
+    "summary": "Late request for HVAC pricing on the Sandpiper Medical Centre fitout, closing tomorrow.",
+    "confidence": 0.94
+  },
+  "06_no_date.eml": {
+    "project_name": "Wattle Grove Aged Care HVAC replacement",
+    "client_name": "Wattle Grove Aged Care",
+    "site_suburb": "Footscray",
+    "trades_in_scope": [
+      "hvac"
+    ],
+    "closing_datetime": null,
+    "site_visit_datetime": null,
+    "documents_link": "https://wattlegroveagedcare.example/hvac",
+    "contact_email": "bruce@wattlegroveagedcare.example",
+    "summary": "Planned HVAC plant replacement; the closing date is not yet set.",
+    "confidence": 0.9
+  },
+  "07_injection.eml": {
+    "project_name": "Plover Street warehouse rooftop units",
+    "client_name": "Plover Street Logistics",
+    "site_suburb": "Laverton",
+    "trades_in_scope": [
+      "hvac"
+    ],
+    "closing_datetime": "2026-12-10 15:00",
+    "site_visit_datetime": null,
+    "documents_link": "https://ploverstreetlogistics.example/rooftop",
+    "contact_email": "kerry@ploverstreetlogistics.example",
+    "summary": "Asks for a price for 8 rooftop air-conditioning units at a warehouse.",
+    "confidence": 0.88
+  },
+  "08_no_documents.eml": {
+    "project_name": "Currawong Hotel kitchen exhaust and HVAC refit",
+    "client_name": "Currawong Hotel",
+    "site_suburb": "Carlton",
+    "trades_in_scope": [
+      "hvac",
+      "mechanical"
+    ],
+    "closing_datetime": "2026-12-08 16:00",
+    "site_visit_datetime": null,
+    "documents_link": null,
+    "contact_email": "lena@currawonghotel.example",
+    "summary": "Tender for a kitchen exhaust and HVAC refit; documents only on request.",
+    "confidence": 0.94
+  },
+  "09_library.eml": {
+    "project_name": "Heron Bay Library Refurbishment",
+    "client_name": "Teague Builders",
+    "site_suburb": "Williamstown",
+    "trades_in_scope": [
+      "mechanical",
+      "plumbing"
+    ],
+    "closing_datetime": "2026-12-15 14:00",
+    "site_visit_datetime": "2026-12-03 10:00",
+    "documents_link": "https://teaguebuilders.example/heron-bay-library",
+    "contact_email": "marcus@teaguebuilders.example",
+    "summary": "Tender for mechanical and plumbing services at the Heron Bay Library.",
+    "confidence": 0.94
+  },
+  "10_brewery_cooling.eml": {
+    "project_name": "Magpie Creek Brewery process cooling",
+    "client_name": "Magpie Creek Brewery",
+    "site_suburb": "Dandenong",
+    "trades_in_scope": [
+      "hvac",
+      "mechanical"
+    ],
+    "closing_datetime": "2026-12-17 16:30",
+    "site_visit_datetime": "2026-12-07 11:00",
+    "documents_link": "https://magpiecreekbrewery.example/cooling",
+    "contact_email": "olive@magpiecreekbrewery.example",
+    "summary": "Tender for process cooling and building HVAC at a brewery.",
+    "confidence": 0.94
+  }
+}
