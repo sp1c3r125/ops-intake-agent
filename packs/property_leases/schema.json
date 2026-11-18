@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "tenant_names": {"type": "array", "items": {"type": "string"}},
+    "property_address": {"type": "string"},
+    "start_date": {"type": ["string", "null"]},
+    "end_date": {"type": ["string", "null"]},
+    "rent_amount": {"type": ["number", "null"]},
+    "rent_frequency": {"type": ["string", "null"], "enum": ["weekly", "fortnightly", "monthly", null]},
+    "bond_amount": {"type": ["number", "null"]},
+    "renewal_option": {"type": "boolean"},
+    "notice_days": {"type": ["integer", "null"]},
+    "special_conditions": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number"}
+  },
+  "required": ["tenant_names", "property_address", "start_date", "end_date", "rent_amount", "rent_frequency", "bond_amount", "renewal_option", "notice_days", "special_conditions", "confidence"],
+  "additionalProperties": false
+}

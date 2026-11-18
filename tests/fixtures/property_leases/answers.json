@@ -1,0 +1,135 @@
+{
+  "lease_01.pdf": {
+    "tenant_names": [
+      "Isabel Crowe",
+      "Tom Crowe"
+    ],
+    "property_address": "Unit 3, 44 Starling Street, Footscray VIC 3011",
+    "start_date": "2026-02-01",
+    "end_date": "2027-01-31",
+    "rent_amount": 520.0,
+    "rent_frequency": "weekly",
+    "bond_amount": 2080.0,
+    "renewal_option": true,
+    "notice_days": 60,
+    "special_conditions": [
+      "No pets without written consent"
+    ],
+    "confidence": 0.96
+  },
+  "lease_02.pdf": {
+    "tenant_names": [
+      "Kwame Mensah"
+    ],
+    "property_address": "18 Bottlebrush Drive, Werribee VIC 3030",
+    "start_date": "2026-06-15",
+    "end_date": "2027-06-14",
+    "rent_amount": 2350.0,
+    "rent_frequency": "monthly",
+    "bond_amount": 2350.0,
+    "renewal_option": false,
+    "notice_days": 90,
+    "special_conditions": [
+      "Tenant maintains the garden",
+      "No smoking inside the property"
+    ],
+    "confidence": 0.94
+  },
+  "lease_03.pdf": {
+    "tenant_names": [
+      "Linh Tran"
+    ],
+    "property_address": "Unit 9, 5 Kookaburra Close, Doncaster VIC 3108",
+    "start_date": "2026-09-01",
+    "end_date": "2027-08-31",
+    "rent_amount": 980.0,
+    "rent_frequency": "fortnightly",
+    "bond_amount": 1960.0,
+    "renewal_option": false,
+    "notice_days": 60,
+    "special_conditions": [
+      "Smoke alarms tested every three months by the tenant"
+    ],
+    "confidence": 0.95
+  },
+  "lease_04.pdf": {
+    "tenant_names": [
+      "Edwina Prowse",
+      "Callum Prowse"
+    ],
+    "property_address": "27 Sandpiper Road, Sunbury VIC 3429",
+    "start_date": "2026-03-01",
+    "end_date": "2027-02-28",
+    "rent_amount": 430.0,
+    "rent_frequency": "weekly",
+    "bond_amount": 1720.0,
+    "renewal_option": true,
+    "notice_days": 30,
+    "special_conditions": [],
+    "confidence": 0.93
+  },
+  "lease_05.pdf": {
+    "tenant_names": [
+      "Rafael Medina"
+    ],
+    "property_address": "Unit 14, 200 Lorikeet Avenue, Box Hill VIC 3128",
+    "start_date": "2026-01-15",
+    "end_date": "2027-01-14",
+    "rent_amount": 2900.0,
+    "rent_frequency": "monthly",
+    "bond_amount": 2900.0,
+    "renewal_option": false,
+    "notice_days": 45,
+    "special_conditions": [
+      "One small pet (cat) approved"
+    ],
+    "confidence": 0.97
+  },
+  "lease_06.pdf": {
+    "tenant_names": [
+      "Zoe Harcourt"
+    ],
+    "property_address": "6 Finch Place, Altona VIC 3018",
+    "start_date": "2026-10-01",
+    "end_date": "2027-09-30",
+    "rent_amount": 610.0,
+    "rent_frequency": "weekly",
+    "bond_amount": 2440.0,
+    "renewal_option": false,
+    "notice_days": null,
+    "special_conditions": [],
+    "confidence": 0.96
+  },
+  "lease_07.pdf": {
+    "tenant_names": [
+      "Marcus Oyelaran"
+    ],
+    "property_address": "Unit 21, 90 Wombat Way, Sunshine VIC 3020",
+    "start_date": "2026-09-01",
+    "end_date": "2025-08-31",
+    "rent_amount": 495.0,
+    "rent_frequency": "weekly",
+    "bond_amount": 1980.0,
+    "renewal_option": false,
+    "notice_days": 60,
+    "special_conditions": [],
+    "confidence": 0.94
+  },
+  "lease_08.pdf": {
+    "tenant_names": [
+      "Sienna Valdez"
+    ],
+    "property_address": "Unit 6, 12 Gannet Street, Brunswick VIC 3056",
+    "start_date": "2026-08-01",
+    "end_date": "2027-07-31",
+    "rent_amount": 2600.0,
+    "rent_frequency": "monthly",
+    "bond_amount": 2600.0,
+    "renewal_option": true,
+    "notice_days": 60,
+    "special_conditions": [
+      "Tenant to arrange carpet cleaning at the end of the lease"
+    ],
+    "confidence": 0.9
+  }
+}
