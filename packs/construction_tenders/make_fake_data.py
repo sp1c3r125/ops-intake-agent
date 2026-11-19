@@ -5,7 +5,7 @@
 ones. Also the canned model answers used by the tests. All builders, clients, projects and links are fictional.
 """
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from fpdf import FPDF
@@ -25,7 +25,7 @@ def ans(project, client, suburb, trades, closing, visit, link, contact, summary,
 
 def summary_pdf(lines):
     pdf = FPDF(format="A4")
-    pdf.set_creation_date(datetime(2026, 11, 20))
+    pdf.set_creation_date(datetime(2026, 11, 20, tzinfo=timezone.utc))   # aware: a naive date takes the machine's UTC offset
     pdf.set_compression(False)   # zlib output differs between builds (e.g. zlib-ng); plain streams are byte-stable
     pdf.add_page()
     for i, line in enumerate(lines):

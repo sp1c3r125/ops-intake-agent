@@ -5,7 +5,7 @@ duplicate, 1 with a wrong line sum), the PO register, and the canned model answe
 All suppliers are fictional and the ABNs are obviously fake.
 """
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from decimal import Decimal
 from pathlib import Path
 
@@ -82,7 +82,7 @@ def fmt(layout, d):
 
 def newpage():
     pdf = FPDF(format="A4")
-    pdf.set_creation_date(datetime(2026, 11, 20))
+    pdf.set_creation_date(datetime(2026, 11, 20, tzinfo=timezone.utc))   # aware: a naive date takes the machine's UTC offset
     pdf.set_compression(False)   # zlib output differs between builds (e.g. zlib-ng); plain streams are byte-stable
     pdf.set_auto_page_break(True, 15)
     pdf.add_page()

@@ -5,7 +5,7 @@
 All tenants, addresses and the agency are fictional.
 """
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from fpdf import FPDF
@@ -134,7 +134,7 @@ def layout_c(L):
 
 def new_pdf():
     pdf = FPDF(format="A4")
-    pdf.set_creation_date(datetime(2026, 11, 20))
+    pdf.set_creation_date(datetime(2026, 11, 20, tzinfo=timezone.utc))   # aware: a naive date takes the machine's UTC offset
     pdf.set_compression(False)   # zlib output differs between builds (e.g. zlib-ng); plain streams are byte-stable
     pdf.add_page()
     return pdf
