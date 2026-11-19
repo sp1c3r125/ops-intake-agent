@@ -26,6 +26,7 @@ def ans(project, client, suburb, trades, closing, visit, link, contact, summary,
 def summary_pdf(lines):
     pdf = FPDF(format="A4")
     pdf.set_creation_date(datetime(2026, 11, 20))
+    pdf.set_compression(False)   # zlib output differs between builds (e.g. zlib-ng); plain streams are byte-stable
     pdf.add_page()
     for i, line in enumerate(lines):
         pdf.set_font("Helvetica", "B" if i == 0 else "", 14 if i == 0 else 11)

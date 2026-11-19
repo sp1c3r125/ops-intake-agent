@@ -135,6 +135,7 @@ def layout_c(L):
 def new_pdf():
     pdf = FPDF(format="A4")
     pdf.set_creation_date(datetime(2026, 11, 20))
+    pdf.set_compression(False)   # zlib output differs between builds (e.g. zlib-ng); plain streams are byte-stable
     pdf.add_page()
     return pdf
 
@@ -159,7 +160,8 @@ def picture_only(L, path):
                 line = trial
         d.text((90, y), line, fill=(20, 20, 20), font=f)
         y += int(size * 3.6)
-    img.save(path, "PDF", resolution=150.0)
+    fixed = datetime(2026, 11, 20).timetuple()   # Pillow would otherwise stamp the current time
+    img.save(path, "PDF", resolution=150.0, creationDate=fixed, modDate=fixed)
 
 
 def answer(L, conf):

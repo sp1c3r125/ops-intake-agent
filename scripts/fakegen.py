@@ -54,7 +54,7 @@ def write_csv(path, header, rows):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")   # not the module default "\r\n": git stores "\n"
         w.writerow(header)
         w.writerows(rows)
 
@@ -63,7 +63,8 @@ def write_answers(pack, answers):
     """The canned model answers for the pack's end-to-end test: {item id: answer}. Used by tests only."""
     path = FIXTURES / pack / "answers.json"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(answers, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(answers, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
+                    newline="\n")
 
 
 def write_eml(path, sender, to, subject, body, when, attachments=()):
